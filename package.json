@@ -1,0 +1,36 @@
+{
+	"name": "bitsy-tile-downloader",
+	"version": "0.0.0",
+	"description": "Utility for downloading tiles from a bitsy game",
+	"license": "MIT",
+	"repository": "vikepic/bitsy-tile-downloader",
+	"author": {
+		"name": "Victor Enrique Alcazar Lopez",
+		"email": "valcazar96@gmail.com",
+		"url": "vikepic.github.io"
+	},
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"test": "xo && ava",
+		"build": "browserify src/index.js -o gen/bundle.js",
+		"watch": "watchify src/index.js -o gen/bundle.js"
+	},
+	"files": [
+		"src/"
+	],
+	"keywords": [
+		""
+	],
+	"dependencies": {
+		"jquery-browserify": "^1.8.1"
+	},
+	"devDependencies": {
+		"acorn": "^6.2.1",
+		"ava": "^2.2.0",
+		"browserify": "^16.3.0",
+		"watchify": "^3.11.1",
+		"xo": "^0.21.0"
+	}
+}

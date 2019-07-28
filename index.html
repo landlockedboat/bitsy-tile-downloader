@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="src/style.css">
+</head>
+
+<body>
+	<div class="split-left">
+		<div class="centered">
+			<a id="download" download="tilemap.jpg" href="" onclick="download_img(this);">Download as an image</a>
+			<div>
+				Colors
+				<input type="color" id="color0" name="color0" value="#ffffff">
+				<input type="color" id="color1" name="color1" value="#000000">
+			</div>
+			<div>Scale <input id="scale-slider" type="range" name="points" min="1" max="10" value="5"></div>
+		</div>
+		<div>URL: <input id="url-input" type="text" name="fname" value="https://raw.githubusercontent.com/vikepic/the-king-is-back/master/index.html"> <button id="use-url-button">Use</button></div>
+
+		Write the URL of a bitsy game here. Works best with raw github data.
+
+		You can get some at the <a href="https://github.com/Ragzouken/bitsy-archive">bitsy archive</a>!
+	</div>
+
+	<div class="split-right">
+		<div class="centered">
+			<div id="resolution"></div>
+			<div class="wrapper">
+				<canvas id="canvas" width="500" height="500"></canvas>
+			</div>
+		</div>
+	</div>
+	<script src="gen/bundle.js"></script>
+</body>
+
+</html>
